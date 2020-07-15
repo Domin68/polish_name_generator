@@ -5,9 +5,14 @@ import java.util.List;
 import java.util.Random;
 
 public class RandomData extends LoadData {
-    // List of generated names+surnames
+    /**
+     * List of generated names+surnames
+     */
     private List<String> people = new ArrayList<>();
-    // List of surnames for females with ending witch suits for female surname
+
+    /**
+     * List of surnames for females with ending witch suits for female surname
+     */
     private List<String> surnameForFemale = new ArrayList<>();
 
 
@@ -24,7 +29,9 @@ public class RandomData extends LoadData {
         }
         return people;
     }
-// method for changing surnames for females (diffrent forms of surname regarding to gender)
+    /**
+     *  method femaleSurnames() is for changing surnames for females (diffrent forms of surname regarding to gender)
+     */
     public void femaleSurnames() {
         String femaleSurname;
         for (int i = 0; i < getSurnamesDB().size(); i++) {
@@ -38,7 +45,11 @@ public class RandomData extends LoadData {
                 surnameForFemale.add(getSurnamesDB().get(i));
         }
     }
-   // method for generating name+surname and adding it to List 
+    /**
+     * method createPerson() is for generating name+surname and adding it to List
+     * @param isMale stands for male or female name + surname
+     */
+
     public void createPerson(boolean isMale) {
         Random rnd = new Random();
         if (isMale) {
