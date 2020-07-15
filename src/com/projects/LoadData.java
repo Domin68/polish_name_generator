@@ -7,15 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LoadData {
-    /**
-     *  Lists loaded from .txt files
-     */
+    // Lists loaded from .txt files
     private List<String> maleNamesDB = new ArrayList<>();
     private List<String> femaleNamesDB = new ArrayList<>();
     private List<String> surnamesDB = new ArrayList<>();
-    /**
-     *  path of the .txt files with malenames, femlenames and surnames
-     */
+    //path of the .txt files with malenames, femlenames and surnames
     private String maleNamePath = "src/com/projects/MaleNames.txt";
     private String femaleNamePath = "src/com/projects/FemaleNames.txt";
     private String surnamePath = "src/com/projects/Surnames.txt";
@@ -68,10 +64,7 @@ public class LoadData {
     public void setSurnamePath(String surnamePath) {
         this.surnamePath = surnamePath;
     }
-
-    /**
-     *  method dataFromTxt() responsible for reading .txt file and adding text to Lists
-     */
+    //method responsible for reading .txt file and adding text to Lists
     public void dataFromTxt(){
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(maleNamePath));

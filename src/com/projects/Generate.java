@@ -4,11 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Generate {
-    /**
-     * method is for generating random gender, and amount of examples to create
-     * @param numberOfExamples amount of examples
-     * @param rndData is for keeping gender random
-     */
+    //method for generating random gender, and number of data to create
     private void dataCreator(int numberOfExamples, RandomData rndData) {
         Random rnd = new Random();
         for (int i = 0; i < numberOfExamples; i++) {
@@ -19,10 +15,7 @@ public class Generate {
             }
         }
     }
-
-    /**
-     * method run() is for running whole project in main
-     */
+    //method to use in main file 
     public void run(){
         RandomData rndData = new RandomData();
         rndData.dataFromTxt();
