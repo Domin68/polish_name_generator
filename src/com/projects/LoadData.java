@@ -8,7 +8,7 @@ import java.util.List;
 
 public class LoadData {
     /**
-     *  Lists loaded from .txt files
+     *  Lists for keeping names loaded from .txt files
      */
     private List<String> maleNamesDB = new ArrayList<>();
     private List<String> femaleNamesDB = new ArrayList<>();
@@ -70,7 +70,7 @@ public class LoadData {
     }
 
     /**
-     *  method dataFromTxt() responsible for reading .txt file and adding text to Lists
+     *  method dataFromTxt() is responsible for reading .txt file and adding names to Lists
      */
     public void dataFromTxt(){
         try {
